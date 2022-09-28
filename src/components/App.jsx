@@ -1,13 +1,13 @@
+import axios from "axios"
 import { useEffect, useState } from "react"
 
 const App = () => {
   const apiURL = import.meta.env.VITE_API_URL
   const [cryptos, setCryptos] = useState()
   useEffect(()=>{
-    fetch(`${apiURL}assets`)
-    .then((fetchedInfo) => fetchedInfo.json())
+    axios.get(`${apiURL}assets`)
     .then((datJson) => {
-      setCryptos(datJson.data)
+      setCryptos(datJson.data.data)
     })
     .catch((err) => {
       console.error(err.message)
