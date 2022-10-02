@@ -1,0 +1,100 @@
+.parallax {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh); }
+  .parallax.par-01 {
+    background-image: url("../../assets/images/neonTriangleForest.jpg"); }
+  .parallax.par-02 {
+    background-image: url("../../assets/images/neonTunnel_1.jpg"); }
+
+.parallax-font {
+  font-weight: lighter;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.2em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em; }
+  .parallax-font.par-01-header {
+    width: 33.3%;
+    font-size: 2.3em;
+    color: rgba(0, 225, 255, 0.799);
+    background: #7d0078;
+    background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078",endColorstr="#048099",GradientType=1); }
+  .parallax-font.par-01-caption {
+    font-size: 1.5rem;
+    width: 18.8%;
+    color: #ffa5eb;
+    background: #c800c0;
+    background: -moz-linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
+    background: linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0",endColorstr="#000000",GradientType=1); }
+
+.logo-navbar {
+  width: 32px;
+  height: 32px;
+  margin: 0.6rem;
+  margin-top: 1.1rem; }
+
+.primary-header {
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem; }
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .primary-navigation.a {
+    text-decoration: none; }
+  .primary-navigation.a > [aria-hidden="true"] {
+    text-decoration: none;
+    font-weight: 700;
+    margin-inline-end: 0.77em; }
+
+.navbar-element {
+  position: relative;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px 10px 0px 0px; }
+  .navbar-element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0.08rem;
+    background: #f7f7f7;
+    transition: all 300ms ease-in-out; }
+  .navbar-element::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0.08rem;
+    background: #f7f7f7;
+    transition: all 300ms ease-in-out; }
+  .navbar-element:hover::before, .navbar-element:hover::after {
+    width: 103%;
+    left: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Alkalami', serif; }
+
+.flex {
+  display: flex;
+  gap: var(--gap, 2rem); }

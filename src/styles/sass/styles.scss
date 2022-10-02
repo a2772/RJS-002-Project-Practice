@@ -1,0 +1,16 @@
+@import "./config";
+@import "./parallax";
+@import "./navegation";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alkalami', serif;
+}
+.flex{
+    display: flex;
+    gap: var(--gap, 2rem);
+}

@@ -1,0 +1,57 @@
+//Primary Header
+.logo-navbar{
+    width: 32px;
+    height: 32px;
+    $margin: 0.6rem;
+    margin: $margin;
+    margin-top: 1.1rem;
+}
+.primary-header{
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &.a{
+        text-decoration: none;
+    }
+    &.a > [aria-hidden="true"]{
+        text-decoration: none;
+        font-weight: 700;
+        margin-inline-end: 0.77em;
+    }
+}
+.navbar-element{
+    position: relative;
+    text-decoration: none;
+    color:aliceblue;
+    padding: 5px 10px 0px 0px;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0.08rem;
+        background: #f7f7f7;
+        transition: all 300ms ease-in-out;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%; 
+        width: 0;
+        height: 0.08rem;
+        background: #f7f7f7;
+        transition: all 300ms ease-in-out;
+    }
+    &:hover::before, &:hover::after{
+        width: 103%;
+        left: 0;
+    }
+}
