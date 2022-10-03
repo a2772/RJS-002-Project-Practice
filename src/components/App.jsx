@@ -9,7 +9,7 @@ const App = () => {
       <NavBar />
       <ParallaxStyleOne 
         classNameParallax="par-01" 
-        headerCont="KOZNAARP_72 SRP"
+        headerCont="KOZNAARP 72 SRP"
         captionCont="Welcome"
       />
       <StartData />

@@ -1,3 +1,18 @@
+html {
+  font-size: 8px; }
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (min-width: 660px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 17px; } }
+
 .parallax {
   width: 100%;
   height: 100vh;
@@ -15,12 +30,12 @@
   margin: auto;
   text-align: center;
   border-radius: 10px;
-  padding: 0.2em;
-  margin-top: 0.9em;
-  margin-bottom: 0.9em; }
+  padding: 0.2rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem; }
   .parallax-font.par-01-header {
     width: 33.3%;
-    font-size: 2.3em;
+    font-size: 2.3rem;
     color: rgba(0, 225, 255, 0.799);
     background: #7d0078;
     background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
@@ -38,33 +53,37 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0",endColorstr="#000000",GradientType=1); }
 
 .logo-navbar {
-  width: 32px;
-  height: 32px;
-  margin: 0.6rem;
-  margin-top: 1.1rem; }
+  width: 3rem;
+  height: 3rem;
+  margin: 0.3rem;
+  padding-top: 0.8rem; }
 
 .primary-header {
+  position: fixed;
+  width: 100%;
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  padding-right: 2rem; }
+  padding-right: 1rem; }
+
+.mobile-nav-toggle {
+  display: none; }
 
 .primary-navigation {
   list-style: none;
-  padding: 0;
   margin: 0; }
   .primary-navigation.a {
     text-decoration: none; }
-  .primary-navigation.a > [aria-hidden="true"] {
-    text-decoration: none;
-    font-weight: 700;
-    margin-inline-end: 0.77em; }
+
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%); }
 
 .navbar-element {
   position: relative;
   text-decoration: none;
   color: aliceblue;
-  padding: 5px 10px 0px 0px; }
+  padding: 0.3rem 0 0 0;
+  font-size: 1.5rem; }
   .navbar-element::before {
     content: "";
     position: absolute;
@@ -86,6 +105,53 @@
   .navbar-element:hover::before, .navbar-element:hover::after {
     width: 103%;
     left: 0; }
+
+@media screen and (orientation: portrait) {
+  .primary-navigation {
+    z-index: calc($zIndexMax - 1);
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: 5rem 5rem 8rem 8rem;
+    backdrop-filter: blur(1rem);
+    background: rgba(83, 24, 73, 0.521);
+    transform: translateX(100%);
+    transition: transform 400ms ease-out; }
+  .mobile-nav-toggle {
+    display: block;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url("../../assets/images/menu.svg");
+    background-repeat: no-repeat;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 1.1rem;
+    right: 1.1rem;
+    z-index: 999; }
+  .mobile-nav-toggle[data-visible="true"] {
+    background-image: url("../../assets/images/menuClose.svg"); } }
+
+.navbar-element img {
+  width: 1.9rem;
+  aspect-ratio: 1;
+  display: inline-block;
+  vertical-align: -0.4rem; }
+
+.navbar-element span {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  .navbar-element span {
+    display: block; }
+  .navbar-element img {
+    display: none; } }
+
+@media screen and (min-width: 480px) {
+  .navbar-element span {
+    display: inline-block; }
+  .navbar-element img {
+    display: inline-block; } }
 
 * {
   margin: 0;

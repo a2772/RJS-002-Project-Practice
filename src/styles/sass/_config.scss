@@ -7,6 +7,22 @@ $foreColor01: #e4fde1;
 $contrastColor01: #f45b69;
 $canvasColor01: #6b2737;
 
+//Values Z-index
+$zIndexMax: 999;
+
 //Images:
 $parallaxImg01: "../../assets/images/neonTriangleForest.jpg";
 $parallaxImg02: "../../assets/images/neonTunnel_1.jpg";
+$menuIcon: "../../assets/images/menu.svg";
+$menuIconClose: "../../assets/images/menuClose.svg";
+
+html{ font-size: 8px;}
+@media screen and (min-width: 480px){
+    html{ font-size: 12px;}
+}
+@media screen and (min-width: 660px){
+    html{ font-size: 15px;}
+}
+@media screen and (min-width: 900px){
+    html{ font-size: 17px;}
+}
