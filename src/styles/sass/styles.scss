@@ -2,7 +2,6 @@
 @import "./parallax";
 @import "./navegation";
 @import "./table";
-@import "./crypto";
 
 *{
     margin: 0;
@@ -15,4 +14,12 @@ body{
 .flex{
     display: flex;
     gap: var(--gap, 2rem);
+}
+.cryptos-area{
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $semiBlack;
+    color: $foreColor02;
 }

@@ -15,25 +15,27 @@ const CryptoMenu = () => {
         })
     }, [])
 
-    if (!cryptos) return(<div className="cryptos-div">Loading... please wait</div>)
+    if (!cryptos) return(<div>Loading... please wait</div>)
     return(
-        <div className="table">
-            <div className="table-caption">Cryptos list</div>
-            <div className="table-header">
-                <div className="table-cell-header">ID</div>
-                <div className="table-cell-header">Name</div>
-                <div className="ttable-cell-header">Price</div>
-            </div>
-            <div className="table-body">
-                {
-                    cryptos.map(({id, name, priceUsd}) => 
-                    (<CryptoPreview key={id} idC={id} nameC={name} priceUsdC={priceUsd} />))
-                }
-            </div>
-            <div className="table-footer">
-                <div className="footer-cell">ID Footer</div>
-                <div className="footer-cell">Name Footer</div>
-                <div className="footer-cell">Price Footer</div>
+        <div className="cryptos-area">
+            <div className="table">
+                <div className="table-caption">Cryptos list</div>
+                <div className="table-header">
+                    <div className="table-cell-header table-text-center">ID</div>
+                    <div className="table-cell-header table-text-center">Name</div>
+                    <div className="table-cell-header table-text-center">Price</div>
+                </div>
+                <div className="table-body">
+                    {
+                        cryptos.map(({id, name, priceUsd}, itemIndex) => 
+                        (<CryptoPreview key={id} idC={id} nameC={name} priceUsdC={priceUsd} itemIndex={itemIndex} />))
+                    }
+                </div>
+                <div className="table-footer">
+                    <div className="footer-cell">ID Footer</div>
+                    <div className="footer-cell">Name Footer</div>
+                    <div className="footer-cell">Price Footer</div>
+                </div>
             </div>
         </div>
     )

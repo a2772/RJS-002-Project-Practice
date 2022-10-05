@@ -1,11 +1,37 @@
-//Colors: https://coolors.co/114b5f-456990-e4fde1-f45b69-6b2737
+//Colors:
+//1) https://coolors.co/114b5f-456990-e4fde1-f45b69-6b2737
+//2) https://coolors.co/292e1e-7f0799-9649cb-afbbf2-d3fff3
+//3) https://coolors.co/ee4266-2a1e5c-0a0f0d-c4cbca-3cbbb1
+//4) https://coolors.co/292e1e-a0eec0-8ae9c1-86cd82-72a276
+
 //Fonts: https://fonts.google.com/specimen/Alkalami
+
+$semiBlack: rgb(31, 30, 30);
+$pinkFonts: rgb(255, 209, 253);
 
 $backgroundColor01: #114b5f;
 $panelsColor01: #456990;
 $foreColor01: #e4fde1;
 $contrastColor01: #f45b69;
 $canvasColor01: #6b2737;
+
+$backgroundColor02: #7f0799;
+$panelsColor02: #292e1e;
+$foreColor02: #d3fff3;
+$contrastColor02: #9649cb;
+$canvasColor02: #afbbf2;
+
+$backgroundColor03: #0a0f0d;
+$panelsColor03: #2a1e5c;
+$foreColor03: #c4cbca;
+$contrastColor03: #ee4266;
+$canvasColor03: #3cbbb1;
+
+$backgroundColor04: #72a276;
+$panelsColor04: #86cd82;
+$foreColor04: #292e1e;
+$contrastColor04: #8ae9c1;
+$canvasColor04: #a0eec0;
 
 //Values Z-index
 $zIndexMax: 999;
