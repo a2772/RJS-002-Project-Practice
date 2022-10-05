@@ -60,7 +60,7 @@
 //min-width: 35em
 @media screen and (orientation: portrait){
     .primary-navigation{
-        z-index: calc($zIndexMax - 1);
+        z-index: calc(#{$zIndexMax} - 1);
         position: fixed;
         inset: 0 0 0 30%;
         flex-direction: column;

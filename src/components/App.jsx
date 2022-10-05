@@ -1,5 +1,5 @@
 import ParallaxStyleOne from "./design/ParallaxStyleOne"
-import StartData from "./StartData"
+import CryptoMenu from "./crypto/CryptoMenu"
 import NavBar from "./navegation/NavBar"
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         headerCont="KOZNAARP 72 SRP"
         captionCont="Welcome"
       />
-      <StartData />
+      <CryptoMenu />
       <ParallaxStyleOne 
         classNameParallax="par-02 par-01" 
         headerCont="Main funcitions"
