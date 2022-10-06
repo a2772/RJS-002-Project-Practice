@@ -1,43 +1,52 @@
-.parallax{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: calc(30vh);
-    &.par-01{
-        background-image: url($parallaxImg01);
-    }
-    &.par-02{
-        background-image: url($parallaxImg02);
-    }
+.parallax {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: calc(30vh);
+
+	&.par-01 {
+		background-image: url($parallaxImg01);
+	}
+
+	&.par-02 {
+		background-image: url($parallaxImg02);
+	}
+
+	&.par-03 {
+		background-image: url($parallaxImg03);
+	}
 }
-.parallax-font{
-    font-weight: lighter;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-    padding: 0.2rem;
-    margin-top: 0.9rem;
-    margin-bottom: 0.9rem;
-    &.par-01-header{
-        width: 33.3%;
-        font-size: 2.3rem;
-        color: rgba(0, 225, 255, 0.799);
-        background: rgb(125,0,120);
-        background: -moz-linear-gradient(45deg, rgba(125,0,120,0.865983893557423) 0%, rgba(62,61,121,0.9164040616246498) 40%, rgba(9,111,121,0.8995973389355743) 70%, rgba(4,128,153,0.8715861344537815) 100%);
-        background: -webkit-linear-gradient(45deg, rgba(125,0,120,0.865983893557423) 0%, rgba(62,61,121,0.9164040616246498) 40%, rgba(9,111,121,0.8995973389355743) 70%, rgba(4,128,153,0.8715861344537815) 100%);
-        background: linear-gradient(45deg, rgba(125,0,120,0.865983893557423) 0%, rgba(62,61,121,0.9164040616246498) 40%, rgba(9,111,121,0.8995973389355743) 70%, rgba(4,128,153,0.8715861344537815) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078",endColorstr="#048099",GradientType=1);
-    }
-    &.par-01-caption{
-        font-size: 1.5rem;
-        width: 18.8%;
-        color: rgb(255, 165, 235);
-        background: rgb(200,0,192);
-        background: -moz-linear-gradient(180deg, rgba(200,0,192,0.6194852941176471) 0%, rgba(148,5,142,0.5998774509803921) 71%, rgba(0,0,0,0.6082808123249299) 100%);
-        background: -webkit-linear-gradient(180deg, rgba(200,0,192,0.6194852941176471) 0%, rgba(148,5,142,0.5998774509803921) 71%, rgba(0,0,0,0.6082808123249299) 100%);
-        background: linear-gradient(180deg, rgba(200,0,192,0.6194852941176471) 0%, rgba(148,5,142,0.5998774509803921) 71%, rgba(0,0,0,0.6082808123249299) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0",endColorstr="#000000",GradientType=1);
-    }
+
+.parallax-font {
+	font-weight: lighter;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	padding: 0.2rem;
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+
+	&.par-01-header {
+		width: 33.3%;
+		font-size: 2.3rem;
+		color: rgba(0, 225, 255, 0.799);
+		background: rgb(125, 0, 120);
+		background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+		background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+		background: linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1);
+	}
+
+	&.par-01-caption {
+		font-size: 1.5rem;
+		width: 18.8%;
+		color: rgb(255, 165, 235);
+		background: rgb(200, 0, 192);
+		background: -moz-linear-gradient(180deg, rgba(200, 0, 192, 0.6194852941176471) 0%, rgba(148, 5, 142, 0.5998774509803921) 71%, rgba(0, 0, 0, 0.6082808123249299) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(200, 0, 192, 0.6194852941176471) 0%, rgba(148, 5, 142, 0.5998774509803921) 71%, rgba(0, 0, 0, 0.6082808123249299) 100%);
+		background: linear-gradient(180deg, rgba(200, 0, 192, 0.6194852941176471) 0%, rgba(148, 5, 142, 0.5998774509803921) 71%, rgba(0, 0, 0, 0.6082808123249299) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0", endColorstr="#000000", GradientType=1);
+	}
 }

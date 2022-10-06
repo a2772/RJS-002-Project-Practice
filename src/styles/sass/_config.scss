@@ -8,6 +8,7 @@
 
 $semiBlack: rgb(31, 30, 30);
 $pinkFonts: rgb(255, 209, 253);
+$backgroundGeneric: #3e004b;
 
 $backgroundColor01: #114b5f;
 $panelsColor01: #456990;
@@ -39,16 +40,61 @@ $zIndexMax: 999;
 //Images:
 $parallaxImg01: "../../assets/images/neonTriangleForest.jpg";
 $parallaxImg02: "../../assets/images/neonTunnel_1.jpg";
+$parallaxImg03: "../../assets/images/neonWall.jpg";
+$astronaut: "../../assets/images/astronaut.jpg";
+
 $menuIcon: "../../assets/images/menu.svg";
 $menuIconClose: "../../assets/images/menuClose.svg";
 
-html{ font-size: 8px;}
-@media screen and (min-width: 480px){
-    html{ font-size: 12px;}
+//Reset
+html {
+	font-size: 8px; //For RWD
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-@media screen and (min-width: 660px){
-    html{ font-size: 15px;}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
-@media screen and (min-width: 900px){
-    html{ font-size: 17px;}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+//RWD
+
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 660px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	html {
+		font-size: 17px;
+	}
 }

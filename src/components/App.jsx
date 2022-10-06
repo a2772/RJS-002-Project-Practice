@@ -1,24 +1,20 @@
-import ParallaxStyleOne from "./design/ParallaxStyleOne"
-import CryptoMenu from "./crypto/CryptoMenu"
-import NavBar from "./navegation/NavBar"
+import { Route, Routes } from "react-router-dom"
+import CryptosMain from "./CryptosMain"
+import RouteNotFound from "./not_found/RouteNotFound"
+import FAQ from "./util/FAQ"
+import AboutUs from "./util/AboutUs"
+import InsideApp from "./InsideApp"
 
 const App = () => {
-
-  return(
-    <>
-      <NavBar />
-      <ParallaxStyleOne 
-        classNameParallax="par-01" 
-        headerCont="KOZNAARP 72 SRP"
-        captionCont="Welcome"
-      />
-      <CryptoMenu />
-      <ParallaxStyleOne 
-        classNameParallax="par-02 par-01" 
-        headerCont="Main funcitions"
-        captionCont="Here you can search specific topics"
-      />
-    </>
+  return (
+    <Routes>
+      <Route path="/" element={<InsideApp />}>
+        <Route index element={<CryptosMain />} />
+        <Route path="aboutus" element={<AboutUs />} />
+        <Route path="faqs" element={<FAQ />} />
+      </Route>
+      <Route path="*" element={<RouteNotFound />} />
+    </Routes>
   )
 }
 

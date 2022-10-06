@@ -1,0 +1,55 @@
+.cryptos-area {
+	width: 100%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background-color: $semiBlack;
+	color: $foreColor02;
+}
+
+.cryptos-grid-area {
+	width: 85%;
+	margin: auto;
+	padding: 1.3rem 0.6rem;
+}
+
+.criptos-grid-title {
+	font-size: 3em;
+	text-align: center;
+}
+
+.criptos-grid-name {
+	font-size: 1.5em;
+}
+
+.cryptos-grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+	gap: 1.5rem;
+}
+
+.crypto-unit {
+	padding: 0.4rem;
+	border: 0.2rem solid $backgroundColor01;
+	border-radius: 5px;
+	border-left: 0.8rem solid $backgroundColor01;
+}
+
+.crypto-info {
+	color: $panelsColor04;
+}
+
+.crypto-label {
+	color: $canvasColor04;
+}
+
+.last-24-neutral {
+	color: white;
+}
+
+.last-24-positive {
+	color: rgb(0, 218, 0);
+}
+
+.last-24-negative {
+	color: rgb(235, 4, 4);
+}

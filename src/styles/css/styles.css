@@ -1,5 +1,30 @@
 html {
-  font-size: 8px; }
+  font-size: 8px;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  font-weight: normal; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 @media screen and (min-width: 480px) {
   html {
@@ -24,6 +49,8 @@ html {
     background-image: url("../../assets/images/neonTriangleForest.jpg"); }
   .parallax.par-02 {
     background-image: url("../../assets/images/neonTunnel_1.jpg"); }
+  .parallax.par-03 {
+    background-image: url("../../assets/images/neonWall.jpg"); }
 
 .parallax-font {
   font-weight: lighter;
@@ -41,7 +68,7 @@ html {
     background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
     background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
     background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078",endColorstr="#048099",GradientType=1); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1); }
   .parallax-font.par-01-caption {
     font-size: 1.5rem;
     width: 18.8%;
@@ -50,7 +77,7 @@ html {
     background: -moz-linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
     background: -webkit-linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
     background: linear-gradient(180deg, rgba(200, 0, 192, 0.619485) 0%, rgba(148, 5, 142, 0.599877) 71%, rgba(0, 0, 0, 0.608281) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0",endColorstr="#000000",GradientType=1); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c800c0", endColorstr="#000000", GradientType=1); }
 
 .logo-navbar {
   width: 3rem;
@@ -218,10 +245,50 @@ html {
 .table-text-left {
   text-align: left; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+.cryptos-area {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #1f1e1e;
+  color: #d3fff3; }
+
+.cryptos-grid-area {
+  width: 85%;
+  margin: auto;
+  padding: 1.3rem 0.6rem; }
+
+.criptos-grid-title {
+  font-size: 3em;
+  text-align: center; }
+
+.criptos-grid-name {
+  font-size: 1.5em; }
+
+.cryptos-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem; }
+
+.crypto-unit {
+  padding: 0.4rem;
+  border: 0.2rem solid #114b5f;
+  border-radius: 5px;
+  border-left: 0.8rem solid #114b5f; }
+
+.crypto-info {
+  color: #86cd82; }
+
+.crypto-label {
+  color: #a0eec0; }
+
+.last-24-neutral {
+  color: white; }
+
+.last-24-positive {
+  color: #00da00; }
+
+.last-24-negative {
+  color: #eb0404; }
 
 body {
   font-family: 'Alkalami', serif; }
@@ -230,10 +297,124 @@ body {
   display: flex;
   gap: var(--gap, 2rem); }
 
-.cryptos-area {
-  width: 100%;
+.center {
+  width: 99%;
   margin: auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  text-align: center;
+  vertical-align: middle; }
+
+.neon-button-cyan {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 3.3rem;
+  text-decoration: none;
+  color: cyan;
+  font-family: "Poppins", sans-serif;
+  border: 0.15rem solid cyan;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 333ms ease-out;
+  background-color: #114b5f; }
+  .neon-button-cyan:hover {
+    background-color: cyan;
+    color: #114b5f;
+    box-shadow: 0 0 0.7rem cyan, 0 0 2.8rem cyan, 0 0 5.6rem cyan; }
+
+.neon-button-red {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 3.3rem;
+  text-decoration: none;
+  color: #720303;
+  font-family: "Poppins", sans-serif;
+  border: 0.15rem solid #720303;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 333ms ease-out;
+  background-color: #c4cbca; }
+  .neon-button-red:hover {
+    background-color: #720303;
+    color: #c4cbca;
+    box-shadow: 0 0 0.7rem #720303, 0 0 2.8rem #720303, 0 0 5.6rem #720303; }
+
+.beginning {
+  margin: auto;
+  padding: 5rem;
+  text-align: center;
   background-color: #1f1e1e;
-  color: #d3fff3; }
+  color: #ffd1fd; }
+
+.not-found-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background: url("../../assets/images/astronaut.jpg"); }
+
+.not-found-page-caption {
+  font-weight: lighter;
+  margin: auto;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  margin-bottom: 1.3rem;
+  width: 33.3%;
+  font-size: 1.3rem;
+  color: rgba(0, 225, 255, 0.799);
+  background: #7d0078;
+  background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+  background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1); }
+
+.about-us-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background-color: #3e004b; }
+  .about-us-page .font {
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 1.3rem;
+    width: 33.3%;
+    font-size: 2.3rem;
+    color: rgba(0, 225, 255, 0.799);
+    background: #7d0078;
+    background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1); }
+
+.faq-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background-color: #3e004b; }
+  .faq-page .font {
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 1.3rem;
+    width: 33.3%;
+    font-size: 2.3rem;
+    color: rgba(0, 225, 255, 0.799);
+    background: #7d0078;
+    background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1); }

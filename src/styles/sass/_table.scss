@@ -1,68 +1,80 @@
 .table {
-    display: table;
-    width: 90%;
-    margin: auto;
+	display: table;
+	width: 90%;
+	margin: auto;
 }
 
-.table-caption{
-    display: table-caption;
-    text-align: center;
-    font-size: 2.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    padding: 1.1em;
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    color: $pinkFonts;
+.table-caption {
+	display: table-caption;
+	text-align: center;
+	font-size: 2.1rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+	padding: 1.1em;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	color: $pinkFonts;
 }
-.table-header{
-    font-size: 1.4em;
-    display: table-header-group;
-    background-color: $canvasColor01;
-    color: $foreColor01;
+
+.table-header {
+	font-size: 1.4em;
+	display: table-header-group;
+	background-color: $canvasColor01;
+	color: $foreColor01;
 }
+
 .table-cell-header {
-    display: table-cell;
-    padding: 1rem;
-    text-align: justify;
-    border-bottom: 0.2rem solid $contrastColor01;
+	display: table-cell;
+	padding: 1rem;
+	text-align: justify;
+	border-bottom: 0.2rem solid $contrastColor01;
 }
-.table-body{
-    display: table-row-group;
+
+.table-body {
+	display: table-row-group;
 }
+
 .table-row {
-    display: table-row;
-    &.row-one{
-        background-color: $backgroundColor01;
-    }
-    &.row-two{
-        background-color: $panelsColor01;
-    }
+	display: table-row;
+
+	&.row-one {
+		background-color: $backgroundColor01;
+	}
+
+	&.row-two {
+		background-color: $panelsColor01;
+	}
 }
+
 .table-cell {
-    display: table-cell;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
+	display: table-cell;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
 }
+
 .table-footer {
-    display: table-footer-group;
-    font-weight: lighter;
-    font-size: 1em;
-    background-color: $backgroundColor02;
-    color: $foreColor02;
+	display: table-footer-group;
+	font-weight: lighter;
+	font-size: 1em;
+	background-color: $backgroundColor02;
+	color: $foreColor02;
 }
-.footer-cell{
-    display: table-cell;
-    padding: 10px;
-    text-align: justify;
-    border-bottom: 1px solid black;
+
+.footer-cell {
+	display: table-cell;
+	padding: 10px;
+	text-align: justify;
+	border-bottom: 1px solid black;
 }
-.table-text-rigth{
-    text-align: right;
+
+.table-text-rigth {
+	text-align: right;
 }
-.table-text-center{
-    text-align: center;
+
+.table-text-center {
+	text-align: center;
 }
-.table-text-left{
-    text-align: left;
+
+.table-text-left {
+	text-align: left;
 }

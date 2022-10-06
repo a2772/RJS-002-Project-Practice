@@ -1,0 +1,163 @@
+body {
+  font-family: 'Alkalami', serif;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 2rem);
+}
+
+.center {
+  width: 99%;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+//Neon button
+.neon-button-cyan {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 3.3rem;
+  text-decoration: none;
+  color: cyan;
+  font-family: "Poppins", sans-serif;
+  border: 0.15rem solid cyan;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 333ms ease-out;
+  background-color: $backgroundColor01;
+
+  &:hover {
+    background-color: cyan;
+    color: $backgroundColor01;
+    box-shadow: 0 0 0.7rem cyan,
+      0 0 2.8rem cyan,
+      0 0 5.6rem cyan;
+  }
+}
+
+.neon-button-red {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 3.3rem;
+  text-decoration: none;
+  color: rgb(114, 3, 3);
+  font-family: "Poppins", sans-serif;
+  border: 0.15rem solid rgb(114, 3, 3);
+  ;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 333ms ease-out;
+  background-color: $foreColor03;
+
+  &:hover {
+    background-color: rgb(114, 3, 3);
+    ;
+    color: $foreColor03;
+    box-shadow: 0 0 0.7rem rgb(114, 3, 3),
+      0 0 2.8rem rgb(114, 3, 3),
+      0 0 5.6rem rgb(114, 3, 3);
+  }
+}
+
+//Generic classes
+.beginning {
+  margin: auto;
+  padding: 5rem;
+  text-align: center;
+  background-color: $semiBlack;
+  color: $pinkFonts;
+}
+
+
+//Not found page
+.not-found-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background: url($astronaut);
+}
+
+.not-found-page-caption {
+  font-weight: lighter;
+  margin: auto;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+  margin-bottom: 1.3rem;
+
+  width: 33.3%;
+  font-size: 1.3rem;
+  color: rgba(0, 225, 255, 0.799);
+  background: rgb(125, 0, 120);
+  background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+  background: linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1);
+}
+
+
+//About us
+.about-us-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background-color: $backgroundGeneric;
+
+  .font {
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 1.3rem;
+
+    width: 33.3%;
+    font-size: 2.3rem;
+    color: rgba(0, 225, 255, 0.799);
+    background: rgb(125, 0, 120);
+    background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    background: linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1);
+  }
+}
+
+
+//FAQ
+.faq-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background-color: $backgroundGeneric;
+
+  .font {
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 1.3rem;
+
+    width: 33.3%;
+    font-size: 2.3rem;
+    color: rgba(0, 225, 255, 0.799);
+    background: rgb(125, 0, 120);
+    background: -moz-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    background: linear-gradient(45deg, rgba(125, 0, 120, 0.865983893557423) 0%, rgba(62, 61, 121, 0.9164040616246498) 40%, rgba(9, 111, 121, 0.8995973389355743) 70%, rgba(4, 128, 153, 0.8715861344537815) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1);
+  }
+}

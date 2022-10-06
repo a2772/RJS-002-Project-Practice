@@ -2,24 +2,5 @@
 @import "./parallax";
 @import "./navegation";
 @import "./table";
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Alkalami', serif;
-}
-.flex{
-    display: flex;
-    gap: var(--gap, 2rem);
-}
-.cryptos-area{
-    width: 100%;
-    margin: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: $semiBlack;
-    color: $foreColor02;
-}
+@import "./cryptos";
+@import "./util";
