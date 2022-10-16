@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Numbers from "../../models/utilities/Numbers.js"
 
 const CryptoGridItem = ({ idC, nameC, priceUsdC, symbol, itemIndex, last24, decimalsPrice = 4, maxLength = 10 }) => {
@@ -12,6 +13,7 @@ const CryptoGridItem = ({ idC, nameC, priceUsdC, symbol, itemIndex, last24, deci
 				<p><span className="crypto-label">Price: </span>${priceDisplayed}</p>
 				<p><span className="crypto-label">Ticker: </span>{symbol}</p>
 				<p><span className="crypto-label">Change last 24 h: </span><span className={class24}>{last24Display}%</span></p>
+				<Link to={`/crypto/${idC}`}><p> Go to {idC} </p></Link>
 			</div>
 		</div>
 	)

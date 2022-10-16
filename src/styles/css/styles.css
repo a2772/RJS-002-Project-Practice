@@ -418,3 +418,21 @@ body {
     background: -webkit-linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
     background: linear-gradient(45deg, rgba(125, 0, 120, 0.865984) 0%, rgba(62, 61, 121, 0.916404) 40%, rgba(9, 111, 121, 0.899597) 70%, rgba(4, 128, 153, 0.871586) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d0078", endColorstr="#048099", GradientType=1); }
+
+.no-decoration {
+  text-decoration: none; }
+
+.div-behind-navbar {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: calc(30vh);
+  background-color: #3e004b;
+  color: #c4cbca; }
+
+.div-behind-navbar .sub-div {
+  width: 75%;
+  margin: auto; }
